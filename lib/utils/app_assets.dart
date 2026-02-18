@@ -4,6 +4,7 @@ abstract class AppAssets {
   //icons
   static const String notificationIcon = 'assets/svgs/notificationIcon.svg';
   static const String createIcon = 'assets/svgs/createIcon.svg';
+  static const String logoutIcon = 'assets/svgs/logoutIcon.svg';
 
   static const List<String> categoryIcons = [
     'assets/svgs/homeIcon.svg',
@@ -11,6 +12,14 @@ abstract class AppAssets {
     'assets/svgs/productsIcon.svg',
     'assets/svgs/promoteIcon.svg',
     'assets/svgs/shopIcon.svg',
+  ];
+  //category names
+  static const List<String> categoryNames = [
+    'Home',
+    'Income',
+    'Products',
+    'Promote',
+    'Shop',
   ];
 
   static const List<String> customersIcon = [

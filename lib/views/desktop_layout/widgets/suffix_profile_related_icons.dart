@@ -13,14 +13,14 @@ class SuffixProfileRelatedIcons extends StatelessWidget {
         IconButton(
           onPressed: () {},
           icon: SvgPicture.asset(
-            width: 36,
-            height: 36,
+            width: 24,
+            height: 24,
             AppAssets.notificationIcon,
           ),
         ),
         IconButton(
           onPressed: () {},
-          icon: SvgPicture.asset(width: 36, height: 36, AppAssets.createIcon),
+          icon: SvgPicture.asset(width: 24, height: 24, AppAssets.createIcon),
         ),
         IconButton(
           onPressed: () {},
