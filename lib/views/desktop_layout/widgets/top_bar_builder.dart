@@ -8,9 +8,9 @@ class TopBarBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
-        Expanded(flex: 1, child: MainLogoWidget()),
+        Expanded(child: MainLogoWidget()),
         Expanded(flex: 3, child: SearchBox()),
         Expanded(flex: 2, child: SuffixProfileRelatedIcons()),
       ],

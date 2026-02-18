@@ -27,11 +27,11 @@ class MainLogoWidget extends StatelessWidget {
             color: Colors.black.withAlpha(85),
             blurRadius: 8,
             spreadRadius: 1,
-            offset: Offset(0, 6),
+            offset: const Offset(0, 6),
           ),
         ],
       ),
-      child: CircleAvatar(
+      child: const CircleAvatar(
         radius: 18,
         backgroundColor: AppColors.green,
         child: CircleAvatar(radius: 10, backgroundColor: AppColors.white),

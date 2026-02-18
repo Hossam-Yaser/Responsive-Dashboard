@@ -44,7 +44,7 @@ class _LeftCategorySectionState extends State<LeftCategorySection> {
             onTap: () {
               //logout logic here
             },
-            child: CategoryItemWidget(
+            child: const CategoryItemWidget(
               iconPath: AppAssets.logoutIcon,
               isSelected: true,
               labelText: "LogOut",

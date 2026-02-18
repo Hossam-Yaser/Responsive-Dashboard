@@ -12,28 +12,27 @@ class SearchBox extends StatelessWidget {
       width: 450,
       child: TextField(
         decoration: InputDecoration(
-          maintainHintSize: true,
           fillColor: AppColors.lightGray,
           filled: true,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: AppColors.lightBlue),
+            borderSide: const BorderSide(color: AppColors.lightBlue),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: AppColors.lightBlue),
+            borderSide: const BorderSide(color: AppColors.lightBlue),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: AppColors.lightBlue),
+            borderSide: const BorderSide(color: AppColors.lightBlue),
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: AppColors.lightBlue),
+            borderSide: const BorderSide(color: AppColors.lightBlue),
           ),
           disabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: AppColors.lightBlue),
+            borderSide: const BorderSide(color: AppColors.lightBlue),
           ),
 
           hint: Text(
@@ -41,7 +40,7 @@ class SearchBox extends StatelessWidget {
             style: AppTextStyles.labelRegular,
           ),
 
-          prefixIcon: Icon(FontAwesomeIcons.magnifyingGlass),
+          prefixIcon: const Icon(FontAwesomeIcons.magnifyingGlass),
         ),
       ),
     );

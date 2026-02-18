@@ -5,13 +5,13 @@ import 'package:responsive_dashboard/utils/app_colors.dart';
 abstract class AppTextStyles {
   // Headings
   static TextStyle heading1 = GoogleFonts.lato(
-    fontSize: 24,
+    fontSize: 32,
     fontWeight: FontWeight.w800, // ExtraBold
     color: AppColors.black,
   );
 
   static TextStyle heading2 = GoogleFonts.lato(
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: FontWeight.w700, // Bold
     color: AppColors.black,
   );

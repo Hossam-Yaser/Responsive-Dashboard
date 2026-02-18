@@ -21,7 +21,7 @@ class CategoryItemWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 15.0),
       child: Container(
-        padding: EdgeInsets.all(11),
+        padding: const EdgeInsets.all(11),
         height: 52,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
