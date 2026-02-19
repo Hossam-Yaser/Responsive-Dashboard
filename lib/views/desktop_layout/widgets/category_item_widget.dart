@@ -21,32 +21,35 @@ class CategoryItemWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 15.0),
       child: Container(
+        alignment: Alignment.centerLeft,
         padding: const EdgeInsets.all(11),
         height: 52,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           color: isSelected ? AppColors.lightGray : AppColors.white,
         ),
-        child: Row(
-          children: [
-            SvgPicture.asset(
-              width: 36,
-              height: 36,
-              iconPath,
-              //use colorfilter instead of color to change the color of svg
-              colorFilter: ColorFilter.mode(
-                isSelected ? AppColors.black : AppColors.slateGray,
-                BlendMode.srcIn,
+        child: FittedBox(
+          child: Row(
+            children: [
+              SvgPicture.asset(
+                width: 36,
+                height: 36,
+                iconPath,
+                //use colorfilter instead of color to change the color of svg
+                colorFilter: ColorFilter.mode(
+                  isSelected ? AppColors.black : AppColors.slateGray,
+                  BlendMode.srcIn,
+                ),
               ),
-            ),
-            horizontalSpacing(19),
-            Text(
-              labelText,
-              style: isSelected
-                  ? AppTextStyles.bodyLarge.copyWith(color: AppColors.black)
-                  : AppTextStyles.bodyLarge,
-            ),
-          ],
+              horizontalSpacing(19),
+              Text(
+                labelText,
+                style: isSelected
+                    ? AppTextStyles.bodyLarge.copyWith(color: AppColors.black)
+                    : AppTextStyles.bodyLarge,
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -24,13 +24,13 @@ abstract class AppTextStyles {
 
   // Body Text
   static TextStyle bodyLarge = GoogleFonts.lato(
-    fontSize: 16,
-    fontWeight: FontWeight.w400, // Regular
-    color: AppColors.darkGray,
+    fontSize: 20,
+    fontWeight: FontWeight.w900, // bold
+    color: AppColors.black,
   );
 
   static TextStyle bodyMedium = GoogleFonts.lato(
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: FontWeight.w400, // Regular
     color: AppColors.darkGray,
   );

@@ -12,7 +12,7 @@ class DesktopLayoutBuilder extends StatelessWidget {
     return const Scaffold(
       backgroundColor: AppColors.white,
       body: Padding(
-        padding: EdgeInsets.only(left: 10.0, right: 10, top: 40),
+        padding: EdgeInsets.only(left: 10.0, right: 10, top: 16),
         child: Column(
           children: [
             TopBarBuilder(),

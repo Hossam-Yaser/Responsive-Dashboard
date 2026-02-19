@@ -9,12 +9,12 @@ class DashBoardBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const ColoredBox(
-      color: AppColors.gray,
+      color: AppColors.lightGray,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           DashBoardHeading(),
-          Row(children: [DashBoardInfoContent()]),
+          Expanded(child: Row(children: [DashBoardInfoContent()])),
         ],
       ),
     );

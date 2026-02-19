@@ -7,7 +7,7 @@ class DashBoardHeading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 28, left: 50),
+      padding: const EdgeInsets.only(left: 50),
       child: Text('Dashboard', style: AppTextStyles.heading1),
     );
   }

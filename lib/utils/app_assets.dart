@@ -28,6 +28,12 @@ abstract class AppAssets {
     'assets/images/customerIcon3.png',
     'assets/images/customerIcon4.png',
   ];
+  static const List<String> customersNames = [
+    'Hossam Y.',
+    'Sara A.',
+    'Ahmed M.',
+    'Laila S.',
+  ];
   static const List<String> productImages = [
     'assets/images/productImage1.png',
     'assets/images/productImage2.png',

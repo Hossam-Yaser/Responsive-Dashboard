@@ -7,6 +7,13 @@ class DashBoardInfoContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(children: [OverviewWidget(), TotalIncomeWidget()]);
+    return const Expanded(
+      child: Column(
+        children: [
+          Expanded(flex: 4, child: OverviewWidget()),
+          Expanded(flex: 3, child: TotalIncomeWidget()),
+        ],
+      ),
+    );
   }
 }

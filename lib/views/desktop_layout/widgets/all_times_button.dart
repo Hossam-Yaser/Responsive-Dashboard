@@ -14,7 +14,7 @@ class AllTimesButton extends StatelessWidget {
       margin: const EdgeInsets.all(4),
       padding: const EdgeInsets.only(left: 27, right: 19, top: 8, bottom: 8),
       decoration: BoxDecoration(
-        color: AppColors.gray,
+        color: AppColors.lightGray,
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
