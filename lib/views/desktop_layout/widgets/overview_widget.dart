@@ -19,7 +19,7 @@ class OverviewWidget extends StatelessWidget {
           children: [
             const DashboardBodyHeading(),
             const AnalyticsSection(),
-            textSeparator(),
+            textSeparator(context),
             const CustomerListGenerator(),
           ],
         ),
@@ -27,12 +27,12 @@ class OverviewWidget extends StatelessWidget {
     );
   }
 
-  Align textSeparator() {
+  Align textSeparator(BuildContext context) {
     return Align(
       alignment: Alignment.centerLeft,
       child: Text(
         "Welcome  to our new online experience",
-        style: AppTextStyles.bodyMedium,
+        style: AppTextStyles.bodyMedium(context),
       ),
     );
   }

@@ -33,11 +33,11 @@ class CustomersAndMoneyInfo extends StatelessWidget {
             children: [
               Text(
                 headingText == null ? 'Customers' : headingText!,
-                style: AppTextStyles.bodyMedium,
+                style: AppTextStyles.bodyMedium(context),
               ),
               Text(
                 numbersText == null ? '10,243' : numbersText!,
-                style: AppTextStyles.bodyLarge,
+                style: AppTextStyles.bodyLarge(context),
               ),
             ],
           ),
@@ -46,7 +46,7 @@ class CustomersAndMoneyInfo extends StatelessWidget {
             backgroundColor: AppColors.lightMint,
             child: Text(
               percentage == null ? '--%' : '$percentage%',
-              style: AppTextStyles.caption,
+              style: AppTextStyles.caption(context),
             ),
           ),
         ],

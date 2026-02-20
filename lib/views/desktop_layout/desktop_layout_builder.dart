@@ -23,7 +23,7 @@ class DesktopLayoutBuilder extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(flex: 2, child: LeftCategorySection()),
-                    Expanded(flex: 10, child: DashBoardBody()),
+                    Expanded(flex: 12, child: DashBoardBody()),
                   ],
                 ),
               ),

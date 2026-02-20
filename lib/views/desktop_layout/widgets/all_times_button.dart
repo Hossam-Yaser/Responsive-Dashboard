@@ -20,7 +20,7 @@ class AllTimesButton extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text('All Times', style: AppTextStyles.labelBold),
+          Text('All Times', style: AppTextStyles.labelBold(context)),
           const Icon(FontAwesomeIcons.angleDown, size: 24),
         ],
       ),

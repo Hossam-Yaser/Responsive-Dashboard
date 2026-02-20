@@ -18,8 +18,8 @@ class ProdctsAndEarningSubHeading extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(leftHeadingText, style: AppTextStyles.labelBold),
-          Text(rightHeadingText, style: AppTextStyles.labelBold),
+          Text(leftHeadingText, style: AppTextStyles.labelBold(context)),
+          Text(rightHeadingText, style: AppTextStyles.labelBold(context)),
         ],
       ),
     );

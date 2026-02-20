@@ -19,14 +19,17 @@ class ProductCart extends StatelessWidget {
         ),
       ),
       title: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Product', style: AppTextStyles.bodySmall),
-          Text('UI Kit', style: AppTextStyles.bodySmall),
+          Text('Product', style: AppTextStyles.bodySmall(context)),
+          Text('UI Kit', style: AppTextStyles.bodySmall(context)),
         ],
       ),
       trailing: Text(
         '\$5461',
-        style: AppTextStyles.bodyMedium.copyWith(fontWeight: FontWeight.bold),
+        style: AppTextStyles.bodyMedium(
+          context,
+        ).copyWith(fontWeight: FontWeight.bold),
       ),
     );
   }

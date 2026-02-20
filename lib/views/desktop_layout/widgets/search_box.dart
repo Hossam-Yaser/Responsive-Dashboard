@@ -37,7 +37,7 @@ class SearchBox extends StatelessWidget {
 
           hint: Text(
             'Search or type a command',
-            style: AppTextStyles.labelRegular,
+            style: AppTextStyles.labelRegular(context),
           ),
 
           prefixIcon: const Icon(FontAwesomeIcons.magnifyingGlass),

@@ -14,7 +14,7 @@ class DashboardBodyHeading extends StatelessWidget {
       children: [
         Align(
           alignment: Alignment.centerLeft,
-          child: Text(headingText, style: AppTextStyles.heading2),
+          child: Text(headingText, style: AppTextStyles.heading2(context)),
         ),
         const AllTimesButton(),
       ],

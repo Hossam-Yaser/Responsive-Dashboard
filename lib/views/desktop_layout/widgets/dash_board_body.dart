@@ -19,7 +19,7 @@ class DashBoardBody extends StatelessWidget {
             child: Row(
               children: [
                 Expanded(flex: 12, child: DashBoardInfoContent()),
-                Expanded(flex: 3, child: ProductsAndCommentsSection()),
+                Expanded(flex: 4, child: ProductsAndCommentsSection()),
               ],
             ),
           ),

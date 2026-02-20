@@ -45,8 +45,10 @@ class CategoryItemWidget extends StatelessWidget {
               Text(
                 labelText,
                 style: isSelected
-                    ? AppTextStyles.bodyLarge.copyWith(color: AppColors.black)
-                    : AppTextStyles.bodyLarge,
+                    ? AppTextStyles.bodyLarge(
+                        context,
+                      ).copyWith(color: AppColors.black)
+                    : AppTextStyles.bodyLarge(context),
               ),
             ],
           ),
