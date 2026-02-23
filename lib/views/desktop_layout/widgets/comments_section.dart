@@ -27,14 +27,16 @@ class CommentsSection extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Divider(height: 1, color: AppColors.gray),
             ),
-            Padding(
-              padding: const EdgeInsetsGeometry.only(left: 8, top: 8),
-              child: Text(
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  Ut enim ad minim veniam, quis nostrud exercitation',
-                style: AppTextStyles.bodySmall(context),
-                textAlign: TextAlign.left,
-                overflow: TextOverflow.ellipsis,
-                maxLines: 5,
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsetsGeometry.only(left: 8, top: 8),
+                child: Text(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  Ut enim ad minim veniam, quis nostrud exercitation',
+                  style: AppTextStyles.bodySmall(context),
+                  textAlign: TextAlign.left,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
+                ),
               ),
             ),
           ],

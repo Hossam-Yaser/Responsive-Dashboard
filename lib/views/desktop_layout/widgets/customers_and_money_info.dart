@@ -29,17 +29,23 @@ class CustomersAndMoneyInfo extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Column(
-            children: [
-              Text(
-                headingText == null ? 'Customers' : headingText!,
-                style: AppTextStyles.bodyMedium(context),
-              ),
-              Text(
-                numbersText == null ? '10,243' : numbersText!,
-                style: AppTextStyles.bodyLarge(context),
-              ),
-            ],
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  headingText == null ? 'Customers' : headingText!,
+                  style: AppTextStyles.bodyMedium(context),
+                  overflow: TextOverflow.ellipsis,
+                ),
+                Text(
+                  numbersText == null ? '10,243' : numbersText!,
+
+                  style: AppTextStyles.bodyLarge(context),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
+            ),
           ),
 
           CircleAvatar(

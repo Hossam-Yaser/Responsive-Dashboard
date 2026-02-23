@@ -11,8 +11,8 @@ class ProductsAndCommentsSection extends StatelessWidget {
       padding: EdgeInsets.only(right: 16.0),
       child: Column(
         children: [
-          Expanded(flex: 3, child: PopularProductsSection()),
-          Expanded(flex: 2, child: CommentsSection()),
+          Expanded(flex: 5, child: PopularProductsSection()),
+          Expanded(flex: 4, child: CommentsSection()),
         ],
       ),
     );

@@ -10,7 +10,13 @@ class TopBarBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        Expanded(child: MainLogoWidget()),
+        Expanded(
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: FittedBox(fit: BoxFit.scaleDown, child: MainLogoWidget()),
+          ),
+        ),
+
         Expanded(flex: 3, child: SearchBox()),
         Expanded(flex: 2, child: SuffixProfileRelatedIcons()),
       ],

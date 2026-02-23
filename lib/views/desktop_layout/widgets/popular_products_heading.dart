@@ -13,7 +13,12 @@ class PopularProductsHeading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 8.0, bottom: 16),
-      child: Text(headingText, style: AppTextStyles.heading2(context)),
+      child: Text(
+        headingText,
+        style: AppTextStyles.heading2(context),
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
+      ),
     );
   }
 }

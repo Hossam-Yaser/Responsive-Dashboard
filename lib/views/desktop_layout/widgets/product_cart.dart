@@ -10,7 +10,7 @@ class ProductCart extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: AspectRatio(
-        aspectRatio: 1.4,
+        aspectRatio: 1.2,
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
@@ -21,12 +21,23 @@ class ProductCart extends StatelessWidget {
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Product', style: AppTextStyles.bodySmall(context)),
-          Text('UI Kit', style: AppTextStyles.bodySmall(context)),
+          Text(
+            'Product',
+            style: AppTextStyles.bodySmall(context),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+          Text(
+            'UI Kit',
+            style: AppTextStyles.bodySmall(context),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
         ],
       ),
       trailing: Text(
         '\$5461',
+        overflow: TextOverflow.ellipsis,
         style: AppTextStyles.bodyMedium(
           context,
         ).copyWith(fontWeight: FontWeight.bold),
