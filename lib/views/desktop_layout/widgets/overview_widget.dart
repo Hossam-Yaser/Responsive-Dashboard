@@ -27,12 +27,14 @@ class OverviewWidget extends StatelessWidget {
     );
   }
 
-  Align textSeparator(BuildContext context) {
-    return Align(
-      alignment: Alignment.centerLeft,
-      child: Text(
-        "Welcome  to our new online experience",
-        style: AppTextStyles.bodyMedium(context),
+  Expanded textSeparator(BuildContext context) {
+    return Expanded(
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Text(
+          "Welcome  to our new online experience",
+          style: AppTextStyles.bodyMedium(context),
+        ),
       ),
     );
   }
