@@ -27,7 +27,7 @@ class MainLogoWidget extends StatelessWidget {
             color: Colors.black.withAlpha(85),
             blurRadius: 8,
             spreadRadius: 1,
-            offset: const Offset(0, 6),
+            offset: const Offset(0, 7),
           ),
         ],
       ),
