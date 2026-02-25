@@ -13,48 +13,53 @@ class _LeftCategorySectionState extends State<LeftCategorySection> {
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverList(
-          delegate: SliverChildBuilderDelegate((context, index) {
-            final isSelected = index == selectedIndex;
-            return GestureDetector(
-              onTap: () {
-                if (selectedIndex != index) {
-                  setState(() {
-                    selectedIndex = index;
-                  });
-                }
-              },
-              child: CategoryItemWidget(
-                iconPath: AppAssets.categoryIcons[index],
-                labelText: AppAssets.categoryNames[index],
-                isSelected: isSelected,
-              ),
-            );
-          }, childCount: AppAssets.categoryIcons.length),
-        ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+      child: SafeArea(
+        child: CustomScrollView(
+          slivers: [
+            SliverList(
+              delegate: SliverChildBuilderDelegate((context, index) {
+                final isSelected = index == selectedIndex;
+                return GestureDetector(
+                  onTap: () {
+                    if (selectedIndex != index) {
+                      setState(() {
+                        selectedIndex = index;
+                      });
+                    }
+                  },
+                  child: CategoryItemWidget(
+                    iconPath: AppAssets.categoryIcons[index],
+                    labelText: AppAssets.categoryNames[index],
+                    isSelected: isSelected,
+                  ),
+                );
+              }, childCount: AppAssets.categoryIcons.length),
+            ),
 
-        //logout item
-        SliverFillRemaining(
-          hasScrollBody: false,
-          child: Column(
-            children: [
-              const Expanded(child: SizedBox()),
-              GestureDetector(
-                onTap: () {
-                  //logout logic here
-                },
-                child: const CategoryItemWidget(
-                  iconPath: AppAssets.logoutIcon,
-                  isSelected: true,
-                  labelText: "LogOut",
-                ),
+            //logout item
+            SliverFillRemaining(
+              hasScrollBody: false,
+              child: Column(
+                children: [
+                  const Expanded(child: SizedBox()),
+                  GestureDetector(
+                    onTap: () {
+                      //logout logic here
+                    },
+                    child: const CategoryItemWidget(
+                      iconPath: AppAssets.logoutIcon,
+                      isSelected: true,
+                      labelText: "LogOut",
+                    ),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }

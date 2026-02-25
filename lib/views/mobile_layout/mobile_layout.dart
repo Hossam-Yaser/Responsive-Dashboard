@@ -32,12 +32,7 @@ class MobileLayout extends StatelessWidget {
       ),
       drawer: const Drawer(
         backgroundColor: AppColors.white,
-        child: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 24),
-            child: LeftCategorySection(),
-          ),
-        ),
+        child: SafeArea(child: LeftCategorySection()),
       ),
     );
   }
